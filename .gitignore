@@ -56,6 +56,8 @@ buildNumber.properties
 
 # AWS User-specific
 .idea/**/aws.xml
+jpackage/
+db/
 
 # Generated files
 .idea/**/contentModel.xml
