@@ -181,7 +181,7 @@
                 <version>${gluonfx.plugin.version}</version>
                 <configuration>
                     <target>${gluonfx.target}</target>
-                    <graalvmHome>/storage/linux/applications/gluon-graal23/graalvm-java23-linux-amd64-gluon-23+25.1-dev</graalvmHome>
+                    <graalvmHome>${env.GLUON_GRAALVM_HOME}</graalvmHome>
                     <attachList>
                         <list>display</list>
                         <list>lifecycle</list>
@@ -200,6 +200,11 @@
                     </nativeImageArgs>
                     <mainClass>${mainClassName}</mainClass>
                     <verbose>true</verbose>
+                        <releaseConfiguration>
+                            <providedSigningIdentity>${env.CTI_CERTIFICATE}</providedSigningIdentity>
+                            <skipSigning>false</skipSigning>
+                        </releaseConfiguration>
+                        <appIdentifier>com.confederatedtechnologies.comms.CommsGluon</appIdentifier>
                 </configuration>
             </plugin>
     </plugins>

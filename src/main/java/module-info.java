@@ -11,5 +11,8 @@ module commsgluon {
     requires java.sql;
 
     opens com.confederatedtechnologies.Comms to javafx.fxml;
+    opens com.confederatedtechnologies.Comms.db to javafx.fxml;
+    opens com.confederatedtechnologies.Comms.views to javafx.fxml;
+
     exports com.confederatedtechnologies.Comms;
 }

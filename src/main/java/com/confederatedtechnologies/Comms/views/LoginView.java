@@ -11,6 +11,7 @@ public class LoginView {
         try {
             return FXMLLoader.load(Objects.requireNonNull(LoginView.class.getResource("login.fxml")));
         } catch (IOException e) {
+            e.printStackTrace();
             System.out.println("IOException: " + e);
             return new View();
         }
