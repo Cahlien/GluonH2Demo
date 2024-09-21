@@ -9,6 +9,9 @@
   "type":"[Lcom.sun.javafx.font.FontConfigManager$FontConfigFont;"
 },
 {
+  "type":"[Lcom.sun.javafx.font.FontConfigManager$FontConfigFont;"
+},
+{
   "type":"[Ljava.lang.String;"
 },
 {
@@ -21,6 +24,14 @@
 {
   "type":"com.sun.glass.ui.Clipboard",
   "methods":[{"name":"contentChanged","parameterTypes":[] }]
+},
+{
+  "type":"com.sun.glass.ui.Clipboard",
+  "methods":[{"name":"contentChanged","parameterTypes":[] }]
+},
+{
+  "type":"com.sun.glass.ui.Cursor",
+  "fields":[{"name":"ptr"}]
 },
 {
   "type":"com.sun.glass.ui.Cursor",
@@ -39,8 +50,12 @@
   "methods":[{"name":"attachData","parameterTypes":["long"] }]
 },
 {
+  "type":"com.sun.glass.ui.Pixels",
+  "methods":[{"name":"attachData","parameterTypes":["long"] }]
+},
+{
   "type":"com.sun.glass.ui.Screen",
-  "methods":[{"name":"<init>","parameterTypes":["long","int","int","int","int","int","int","int","int","int","int","int","int","int","int","int","float","float","float","float"] }]
+  "methods":[{"name":"<init>","parameterTypes":["long","int","int","int","int","int","int","int","int","int","int","int","int","int","int","int","float","float","float","float"] },{"name":"notifySettingsChanged","parameterTypes":[] }]
 },
 {
   "type":"com.sun.glass.ui.Screen",
@@ -57,12 +72,17 @@
 {
   "type":"com.sun.glass.ui.View",
   "fields":[{"name":"ptr"}],
-  "methods":[{"name":"notifyDragDrop","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragEnter","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragLeave","parameterTypes":[] },{"name":"notifyDragOver","parameterTypes":["int","int","int","int","int"] },{"name":"notifyInputMethod","parameterTypes":["java.lang.String","int[]","int[]","byte[]","int","int","int"] },{"name":"notifyKey","parameterTypes":["int","int","char[]","int"] },{"name":"notifyMenu","parameterTypes":["int","int","int","int","boolean"] },{"name":"notifyMouse","parameterTypes":["int","int","int","int","int","int","int","boolean","boolean"] },{"name":"notifyRepaint","parameterTypes":["int","int","int","int"] },{"name":"notifyResize","parameterTypes":["int","int"] },{"name":"notifyScroll","parameterTypes":["int","int","int","int","double","double","int","int","int","int","int","double","double"] },{"name":"notifyView","parameterTypes":["int"] }]
+  "methods":[{"name":"getAccessible","parameterTypes":[] },{"name":"notifyDragDrop","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragEnd","parameterTypes":["int"] },{"name":"notifyDragEnter","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragLeave","parameterTypes":[] },{"name":"notifyDragOver","parameterTypes":["int","int","int","int","int"] },{"name":"notifyInputMethod","parameterTypes":["java.lang.String","int[]","int[]","byte[]","int","int","int"] },{"name":"notifyInputMethodCandidatePosRequest","parameterTypes":["int"] },{"name":"notifyKey","parameterTypes":["int","int","char[]","int"] },{"name":"notifyMenu","parameterTypes":["int","int","int","int","boolean"] },{"name":"notifyMouse","parameterTypes":["int","int","int","int","int","int","int","boolean","boolean"] },{"name":"notifyRepaint","parameterTypes":["int","int","int","int"] },{"name":"notifyResize","parameterTypes":["int","int"] },{"name":"notifyScroll","parameterTypes":["int","int","int","int","double","double","int","int","int","int","int","double","double"] },{"name":"notifyView","parameterTypes":["int"] }]
 },
 {
   "type":"com.sun.glass.ui.View",
   "fields":[{"name":"ptr"}],
-  "methods":[{"name":"getAccessible","parameterTypes":[] },{"name":"notifyDragDrop","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragEnd","parameterTypes":["int"] },{"name":"notifyDragEnter","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragLeave","parameterTypes":[] },{"name":"notifyDragOver","parameterTypes":["int","int","int","int","int"] },{"name":"notifyInputMethod","parameterTypes":["java.lang.String","int[]","int[]","byte[]","int","int","int"] },{"name":"notifyInputMethodCandidatePosRequest","parameterTypes":["int"] },{"name":"notifyKey","parameterTypes":["int","int","char[]","int"] },{"name":"notifyMenu","parameterTypes":["int","int","int","int","boolean"] },{"name":"notifyMouse","parameterTypes":["int","int","int","int","int","int","int","boolean","boolean"] },{"name":"notifyRepaint","parameterTypes":["int","int","int","int"] },{"name":"notifyResize","parameterTypes":["int","int"] },{"name":"notifyView","parameterTypes":["int"] }]
+  "methods":[{"name":"notifyDragDrop","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragEnter","parameterTypes":["int","int","int","int","int"] },{"name":"notifyDragLeave","parameterTypes":[] },{"name":"notifyDragOver","parameterTypes":["int","int","int","int","int"] },{"name":"notifyInputMethod","parameterTypes":["java.lang.String","int[]","int[]","byte[]","int","int","int"] },{"name":"notifyKey","parameterTypes":["int","int","char[]","int"] },{"name":"notifyMenu","parameterTypes":["int","int","int","int","boolean"] },{"name":"notifyMouse","parameterTypes":["int","int","int","int","int","int","int","boolean","boolean"] },{"name":"notifyRepaint","parameterTypes":["int","int","int","int"] },{"name":"notifyResize","parameterTypes":["int","int"] },{"name":"notifyScroll","parameterTypes":["int","int","int","int","double","double","int","int","int","int","int","double","double"] },{"name":"notifyView","parameterTypes":["int"] }]
+},
+{
+  "type":"com.sun.glass.ui.Window",
+  "fields":[{"name":"ptr"}],
+  "methods":[{"name":"isEnabled","parameterTypes":[] },{"name":"notifyClose","parameterTypes":[] },{"name":"notifyDelegatePtr","parameterTypes":["long"] },{"name":"notifyDestroy","parameterTypes":[] },{"name":"notifyFocus","parameterTypes":["int"] },{"name":"notifyFocusDisabled","parameterTypes":[] },{"name":"notifyFocusUngrab","parameterTypes":[] },{"name":"notifyLevelChanged","parameterTypes":["int"] },{"name":"notifyMove","parameterTypes":["int","int"] },{"name":"notifyMoveToAnotherScreen","parameterTypes":["com.sun.glass.ui.Screen"] },{"name":"notifyResize","parameterTypes":["int","int","int"] }]
 },
 {
   "type":"com.sun.glass.ui.Window",
@@ -72,6 +92,15 @@
 {
   "type":"com.sun.javafx.font.FontConfigManager$FcCompFont",
   "fields":[{"name":"allFonts"},{"name":"fcName"},{"name":"firstFont"}]
+},
+{
+  "type":"com.sun.javafx.font.FontConfigManager$FcCompFont",
+  "fields":[{"name":"allFonts"},{"name":"fcName"},{"name":"firstFont"}]
+},
+{
+  "type":"com.sun.javafx.font.FontConfigManager$FontConfigFont",
+  "fields":[{"name":"familyName"},{"name":"fontFile"},{"name":"fullName"},{"name":"styleStr"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "type":"com.sun.javafx.font.FontConfigManager$FontConfigFont",
@@ -103,6 +132,15 @@
   "fields":[{"name":"buffer"},{"name":"num_grays"},{"name":"palette"},{"name":"palette_mode"},{"name":"pitch"},{"name":"pixel_mode"},{"name":"rows"},{"name":"width"}]
 },
 {
+  "type":"com.sun.javafx.font.freetype.FT_Bitmap",
+  "fields":[{"name":"buffer"},{"name":"num_grays"},{"name":"palette"},{"name":"palette_mode"},{"name":"pitch"},{"name":"pixel_mode"},{"name":"rows"},{"name":"width"}]
+},
+{
+  "type":"com.sun.javafx.font.freetype.FT_GlyphSlotRec",
+  "fields":[{"name":"advance_x"},{"name":"advance_y"},{"name":"bitmap"},{"name":"bitmap_left"},{"name":"bitmap_top"},{"name":"format"},{"name":"linearHoriAdvance"},{"name":"linearVertAdvance"},{"name":"metrics"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "type":"com.sun.javafx.font.freetype.FT_GlyphSlotRec",
   "fields":[{"name":"advance_x"},{"name":"advance_y"},{"name":"bitmap"},{"name":"bitmap_left"},{"name":"bitmap_top"},{"name":"format"},{"name":"linearHoriAdvance"},{"name":"linearVertAdvance"},{"name":"metrics"}],
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -112,13 +150,17 @@
   "fields":[{"name":"height"},{"name":"horiAdvance"},{"name":"horiBearingX"},{"name":"horiBearingY"},{"name":"vertAdvance"},{"name":"vertBearingX"},{"name":"vertBearingY"},{"name":"width"}]
 },
 {
-  "type":"java.lang.Boolean",
-  "fields":[{"name":"FALSE"},{"name":"TRUE"}]
+  "type":"com.sun.javafx.font.freetype.FT_Glyph_Metrics",
+  "fields":[{"name":"height"},{"name":"horiAdvance"},{"name":"horiBearingX"},{"name":"horiBearingY"},{"name":"vertAdvance"},{"name":"vertBearingX"},{"name":"vertBearingY"},{"name":"width"}]
 },
 {
   "type":"java.lang.Boolean",
   "fields":[{"name":"FALSE"},{"name":"TRUE"}],
   "methods":[{"name":"booleanValue","parameterTypes":[] }]
+},
+{
+  "type":"java.lang.Boolean",
+  "fields":[{"name":"FALSE"},{"name":"TRUE"}]
 },
 {
   "type":"java.lang.Class",
@@ -131,6 +173,10 @@
 {
   "type":"java.lang.Integer",
   "methods":[{"name":"<init>","parameterTypes":["int"] },{"name":"intValue","parameterTypes":[] }]
+},
+{
+  "type":"java.lang.Iterable",
+  "methods":[{"name":"iterator","parameterTypes":[] }]
 },
 {
   "type":"java.lang.Iterable",
@@ -158,11 +204,11 @@
 },
 {
   "type":"java.lang.String",
-  "methods":[{"name":"lastIndexOf","parameterTypes":["int"] },{"name":"substring","parameterTypes":["int"] }]
+  "methods":[{"name":"toLowerCase","parameterTypes":["java.util.Locale"] }]
 },
 {
   "type":"java.lang.String",
-  "methods":[{"name":"toLowerCase","parameterTypes":["java.util.Locale"] }]
+  "methods":[{"name":"lastIndexOf","parameterTypes":["int"] },{"name":"substring","parameterTypes":["int"] },{"name":"toLowerCase","parameterTypes":["java.util.Locale"] }]
 },
 {
   "type":"java.lang.System",
@@ -175,6 +221,14 @@
 {
   "type":"java.nio.ByteBuffer",
   "methods":[{"name":"array","parameterTypes":[] },{"name":"wrap","parameterTypes":["byte[]"] }]
+},
+{
+  "type":"java.nio.ByteBuffer",
+  "methods":[{"name":"array","parameterTypes":[] },{"name":"wrap","parameterTypes":["byte[]"] }]
+},
+{
+  "type":"java.util.ArrayList",
+  "methods":[{"name":"<init>","parameterTypes":[] },{"name":"<init>","parameterTypes":["int"] },{"name":"add","parameterTypes":["java.lang.Object"] },{"name":"get","parameterTypes":["int"] }]
 },
 {
   "type":"java.util.ArrayList",
@@ -194,6 +248,10 @@
 },
 {
   "type":"java.util.HashMap",
+  "methods":[{"name":"<init>","parameterTypes":[] },{"name":"containsKey","parameterTypes":["java.lang.Object"] },{"name":"get","parameterTypes":["java.lang.Object"] },{"name":"put","parameterTypes":["java.lang.Object","java.lang.Object"] }]
+},
+{
+  "type":"java.util.HashSet",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -205,16 +263,24 @@
   "methods":[{"name":"hasNext","parameterTypes":[] },{"name":"next","parameterTypes":[] }]
 },
 {
+  "type":"java.util.Iterator",
+  "methods":[{"name":"hasNext","parameterTypes":[] },{"name":"next","parameterTypes":[] }]
+},
+{
   "type":"java.util.List",
   "methods":[{"name":"add","parameterTypes":["java.lang.Object"] }]
 },
 {
   "type":"java.util.Map",
-  "methods":[{"name":"get","parameterTypes":["java.lang.Object"] },{"name":"put","parameterTypes":["java.lang.Object","java.lang.Object"] }]
+  "methods":[{"name":"containsKey","parameterTypes":["java.lang.Object"] },{"name":"get","parameterTypes":["java.lang.Object"] },{"name":"keySet","parameterTypes":[] },{"name":"put","parameterTypes":["java.lang.Object","java.lang.Object"] }]
 },
 {
   "type":"java.util.Map",
   "methods":[{"name":"containsKey","parameterTypes":["java.lang.Object"] },{"name":"get","parameterTypes":["java.lang.Object"] },{"name":"keySet","parameterTypes":[] },{"name":"put","parameterTypes":["java.lang.Object","java.lang.Object"] }]
+},
+{
+  "type":"java.util.Set",
+  "methods":[{"name":"add","parameterTypes":["java.lang.Object"] },{"name":"size","parameterTypes":[] },{"name":"toArray","parameterTypes":["java.lang.Object[]"] }]
 },
 {
   "type":"java.util.Set",

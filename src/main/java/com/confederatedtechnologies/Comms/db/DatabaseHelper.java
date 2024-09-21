@@ -63,6 +63,11 @@ public class DatabaseHelper {
     }
 
     private static void insertDefaultUsers(Connection conn) throws SQLException {
+        var users = getUsers(conn);
+        if (!users.isEmpty()) {
+            return;
+        }
+
         String insertUserSQL = "INSERT INTO users (id, username, password) VALUES (?, ?, ?)";
         try (PreparedStatement pstmt = conn.prepareStatement(insertUserSQL)) {
             pstmt.setInt(1, 1);
